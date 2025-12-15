@@ -34,7 +34,7 @@ with st.sidebar:
     st.info("Carregue um ficheiro Excel para começar")
     
 # INICIO
-if menu == "Inicio":
+if menu == "Início":
     with st.expander("**Sobre o Instituto Nacional de Estatística**"):
         st.write("Acesse o site www.ine.cv")
         st.image("INE.png")  # Certifique-se de que a imagem está na mesma pasta
