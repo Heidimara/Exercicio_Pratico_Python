@@ -18,4 +18,17 @@ with st.sidebar:
   dados = st.file_uploader(
     "Carregue os dados",
     type=["xlsx", "xls"]
-  )                    
+  )     
+  if dados: 
+    def carregar_dados(dados):
+      try:
+        df=pd.read_excel(dados)
+        return df
+      except FileNotFoundError:
+        return pd.DataFrame()
+
+    df = carregar_dados (dados)
+    st.table(df)
+
+  else:
+    st.info("Carregue um ficheiro Excel para começar")
