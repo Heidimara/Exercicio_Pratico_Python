@@ -8,7 +8,7 @@ from streamlit_option_menu import option_menu
 st.header("Introduzindo os Elementos de Streamlit")
 menu = option_menu (menu_title="Menu",
                     options=["Início", "Gráficos Estatísticos", "Gráficos Dinâmicos", "Widgets", "Formulario"],
-                    icons =["house, "bar-chart", "bar-chart-line", "toggles", "bar-chart"],
+                    icons =["house", "bar-chart", "bar-chart-line", "toggles", "bar-chart"],
                     menu_icon="cast",
                     default_index=0,
                     orientation="horizontal"
